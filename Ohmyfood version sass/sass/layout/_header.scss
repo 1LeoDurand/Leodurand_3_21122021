@@ -5,8 +5,11 @@
         text-align: center;
     }
     &__logo{
-    width: 160px;
-    margin: 20px 0 10px 0px;
+        width: 160px;
+        margin: 20px 0 10px 0px;
+        @media all and (min-width: 1024px) {
+            width: 300px;
+        }
     }
     &__localisation {
         background-color: $gris-clair;
@@ -62,7 +65,7 @@
                 -moz-transition: all 0.8s ease 0s;
                 -ms-transition: all 0.8s ease 0s;
                 -o-transition: all 0.8s ease 0s;
-}
+        }
         }
     }
 }

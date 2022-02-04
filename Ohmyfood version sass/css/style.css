@@ -63,6 +63,11 @@ a {
   width: 160px;
   margin: 20px 0 10px 0px;
 }
+@media all and (min-width: 1024px) {
+  #header__logo {
+    width: 300px;
+  }
+}
 #header__localisation {
   background-color: #eaeaea;
   justify-content: center;
@@ -121,6 +126,17 @@ li.flex {
   align-items: center;
 }
 
+@media all and (min-width: 720px) {
+  #fonctionnement {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
 .fonctionnement__bloc {
   display: flex;
   align-items: center;
@@ -140,6 +156,17 @@ li.flex {
   color: white;
   margin-right: -10px;
   z-index: 1;
+}
+
+@media all and (min-width: 720px) {
+  #restaurant {
+    margin: 0 15% 0 15%;
+  }
+}
+@media all and (min-width: 1024px) {
+  #restaurant {
+    margin: 0 20% 0 20%;
+  }
 }
 
 .restocard {
@@ -205,6 +232,13 @@ li.flex {
   position: absolute;
   left: 20px;
   top: 20px;
+}
+@media all and (min-width: 1024px) {
+  .fas.fa-arrow-left {
+    font-size: 30px;
+    left: 30px;
+    top: 27px;
+  }
 }
 
 #entrees {
@@ -350,54 +384,32 @@ body.page-menu {
     transform: rotate(360deg);
   }
 }
-/*  STYLE KEYFRAME
-
-.bloc__repas{
-    &:hover .reservation-repas{
-        animation: book-repas .8s linear both;
-        -webkit-animation: book-repas .8s linear both;
-    }
-    &:hover .fa-check-circle {
-            animation: rotation 1s;
-            //transition-delay: .5s;
-            -webkit-animation: rotation 1s;
-    }
-    &:nth-child(1){
-        animation: animation__repas 1s;
-        -webkit-animation: animation__repas 1s;
-    }
-    &:nth-child(2){
-        animation: animation__repas 2s;
-        -webkit-animation: animation__repas 2s;
-    }
-    &:nth-child(3){
-        animation: animation__repas 3s;
-        -webkit-animation: animation__repas 3s;
-    }
-    &:nth-child(4){
-        animation: animation__repas 4s;
-        -webkit-animation: animation__repas 4s;
-    }
+@media all and (min-width: 1024px) {
+  #entrees, #plats, #desserts {
+    padding: 0 10% 0 5%;
+  }
 }
 
-@keyframes book-repas {
-    from {
-        width: 0;
-    }
-    to {
-        width : 15%;
-    }
-}
-*/
 footer {
   background-color: #353535;
   color: white;
+}
+@media all and (min-width: 720px) {
+  footer {
+    text-align: center;
+  }
 }
 
 #footer__logo {
   filter: invert(100%);
   width: 100px;
   margin: 16px 0 5px 20px;
+}
+@media all and (min-width: 720px) {
+  #footer__logo {
+    margin: 35px 0 10px 45px;
+    width: 200px;
+  }
 }
 
 ul li {

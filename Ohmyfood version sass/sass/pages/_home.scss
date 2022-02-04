@@ -4,6 +4,17 @@ li.flex {
     align-items: center;
 }
 
+#fonctionnement {
+    @media all and (min-width: 720px) {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
 .fonctionnement {
     &__bloc {
     display: flex;
@@ -29,6 +40,15 @@ li.flex {
 }
 
 // Section restaurant accueil
+
+#restaurant {
+    @media all and (min-width: 720px) {
+        margin: 0 15% 0 15%;
+    }
+    @media all and (min-width: 1024px) {
+        margin: 0 20% 0 20%;
+    }
+}
 
 .restocard {
     border-radius: 15px;
